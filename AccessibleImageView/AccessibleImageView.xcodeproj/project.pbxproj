@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F53310C614212C0500673FAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53310C514212C0500673FAE /* UIKit.framework */; };
+		F53310C814212C0500673FAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53310C714212C0500673FAE /* Foundation.framework */; };
+		F53310CA14212C0500673FAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53310C914212C0500673FAE /* CoreGraphics.framework */; };
+		F53310D014212C0500673FAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53310CE14212C0500673FAE /* InfoPlist.strings */; };
+		F53310D214212C0500673FAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53310D114212C0500673FAE /* main.m */; };
+		F53310D614212C0500673FAE /* ESAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53310D514212C0500673FAE /* ESAppDelegate.m */; };
+		F53310DE14212C2C00673FAE /* ESAccessibleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53310DD14212C2C00673FAE /* ESAccessibleImageView.m */; };
+		F53310E91421310A00673FAE /* ESImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53310E81421310A00673FAE /* ESImageViewController.m */; };
+		F53310EB1421331F00673FAE /* 1004.png in Resources */ = {isa = PBXBuildFile; fileRef = F53310EA1421331F00673FAE /* 1004.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F53310C114212C0500673FAE /* AccessibleImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibleImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53310C514212C0500673FAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F53310C714212C0500673FAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F53310C914212C0500673FAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F53310CD14212C0500673FAE /* AccessibleImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AccessibleImageView-Info.plist"; sourceTree = "<group>"; };
+		F53310CF14212C0500673FAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F53310D114212C0500673FAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53310D314212C0500673FAE /* AccessibleImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AccessibleImageView-Prefix.pch"; sourceTree = "<group>"; };
+		F53310D414212C0500673FAE /* ESAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESAppDelegate.h; sourceTree = "<group>"; };
+		F53310D514212C0500673FAE /* ESAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESAppDelegate.m; sourceTree = "<group>"; };
+		F53310DC14212C2C00673FAE /* ESAccessibleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESAccessibleImageView.h; sourceTree = "<group>"; };
+		F53310DD14212C2C00673FAE /* ESAccessibleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESAccessibleImageView.m; sourceTree = "<group>"; };
+		F53310E71421310A00673FAE /* ESImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESImageViewController.h; sourceTree = "<group>"; };
+		F53310E81421310A00673FAE /* ESImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESImageViewController.m; sourceTree = "<group>"; };
+		F53310EA1421331F00673FAE /* 1004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1004.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53310BE14212C0400673FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53310C614212C0500673FAE /* UIKit.framework in Frameworks */,
+				F53310C814212C0500673FAE /* Foundation.framework in Frameworks */,
+				F53310CA14212C0500673FAE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F53310B614212C0400673FAE = {
+			isa = PBXGroup;
+			children = (
+				F53310CB14212C0500673FAE /* AccessibleImageView */,
+				F53310C414212C0500673FAE /* Frameworks */,
+				F53310C214212C0500673FAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F53310C214212C0500673FAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53310C114212C0500673FAE /* AccessibleImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53310C414212C0500673FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F53310C514212C0500673FAE /* UIKit.framework */,
+				F53310C714212C0500673FAE /* Foundation.framework */,
+				F53310C914212C0500673FAE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53310CB14212C0500673FAE /* AccessibleImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F53310D414212C0500673FAE /* ESAppDelegate.h */,
+				F53310D514212C0500673FAE /* ESAppDelegate.m */,
+				F53310E71421310A00673FAE /* ESImageViewController.h */,
+				F53310E81421310A00673FAE /* ESImageViewController.m */,
+				F53310DC14212C2C00673FAE /* ESAccessibleImageView.h */,
+				F53310DD14212C2C00673FAE /* ESAccessibleImageView.m */,
+				F53310CC14212C0500673FAE /* Supporting Files */,
+			);
+			path = AccessibleImageView;
+			sourceTree = "<group>";
+		};
+		F53310CC14212C0500673FAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53310EA1421331F00673FAE /* 1004.png */,
+				F53310CD14212C0500673FAE /* AccessibleImageView-Info.plist */,
+				F53310CE14212C0500673FAE /* InfoPlist.strings */,
+				F53310D114212C0500673FAE /* main.m */,
+				F53310D314212C0500673FAE /* AccessibleImageView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53310C014212C0400673FAE /* AccessibleImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53310D914212C0500673FAE /* Build configuration list for PBXNativeTarget "AccessibleImageView" */;
+			buildPhases = (
+				F53310BD14212C0400673FAE /* Sources */,
+				F53310BE14212C0400673FAE /* Frameworks */,
+				F53310BF14212C0400673FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AccessibleImageView;
+			productName = AccessibleImageView;
+			productReference = F53310C114212C0500673FAE /* AccessibleImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53310B814212C0400673FAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Doug Russell";
+			};
+			buildConfigurationList = F53310BB14212C0400673FAE /* Build configuration list for PBXProject "AccessibleImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F53310B614212C0400673FAE;
+			productRefGroup = F53310C214212C0500673FAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53310C014212C0400673FAE /* AccessibleImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53310BF14212C0400673FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53310D014212C0500673FAE /* InfoPlist.strings in Resources */,
+				F53310EB1421331F00673FAE /* 1004.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53310BD14212C0400673FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53310D214212C0500673FAE /* main.m in Sources */,
+				F53310D614212C0500673FAE /* ESAppDelegate.m in Sources */,
+				F53310DE14212C2C00673FAE /* ESAccessibleImageView.m in Sources */,
+				F53310E91421310A00673FAE /* ESImageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F53310CE14212C0500673FAE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53310CF14212C0500673FAE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53310D714212C0500673FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F53310D814212C0500673FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53310DA14212C0500673FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AccessibleImageView/AccessibleImageView-Prefix.pch";
+				INFOPLIST_FILE = "AccessibleImageView/AccessibleImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F53310DB14212C0500673FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AccessibleImageView/AccessibleImageView-Prefix.pch";
+				INFOPLIST_FILE = "AccessibleImageView/AccessibleImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53310BB14212C0400673FAE /* Build configuration list for PBXProject "AccessibleImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53310D714212C0500673FAE /* Debug */,
+				F53310D814212C0500673FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53310D914212C0500673FAE /* Build configuration list for PBXNativeTarget "AccessibleImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53310DA14212C0500673FAE /* Debug */,
+				F53310DB14212C0500673FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F53310B814212C0400673FAE /* Project object */;
+}
