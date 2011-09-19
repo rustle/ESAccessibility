@@ -26,6 +26,46 @@
 @implementation ESAccessibleImageView
 @synthesize accessibilityElements=_accessibilityElements;
 
+- (void)setup
+{
+	[[NSNotificationCenter defaultCenter] addObserver:self 
+											 selector:@selector(voiceOverStatusChanged:) 
+												 name:UIAccessibilityVoiceOverStatusChanged 
+											   object:nil];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	if (self)
+		[self setup];
+	return self;
+}
+
+- (id)initWithFrame:(CGRect)frame
+{
+	self = [super initWithFrame:frame];
+	if (self)
+		[self setup];
+	return self;
+}
+
+- (void)dealloc
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+#pragma mark - Notifications
+
+- (void)voiceOverStatusChanged:(NSNotification *)notification
+{
+	BOOL hidden = !UIAccessibilityIsVoiceOverRunning();
+	for (UIView *view in self.accessibilityElements)
+	{
+		view.hidden = hidden;
+	}
+}
+
 #pragma mark - Accessors
 
 - (BOOL)isAccessibilityElement
@@ -68,7 +108,7 @@
 	UIView *view = [[UIView alloc] initWithFrame:frame];
 	view.isAccessibilityElement = YES;
 #if DEBUG
-	view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.1];
+	view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.3];
 #else
 	view.backgroundColor = [UIColor clearColor];
 #endif
@@ -76,6 +116,7 @@
 	view.accessibilityHint = hint;
 	view.accessibilityTraits = UIAccessibilityTraitStaticText;
 	[self.accessibilityElements addObject:view];
+	view.hidden = !UIAccessibilityIsVoiceOverRunning();
 	[self addSubview:view];
 }
 
